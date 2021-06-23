@@ -206,19 +206,6 @@ import { AuthenticationService } from '../../services/authentication.service';
 
 - Ao adicionar arquivos, verifique a necessidade de remapeamento de *loaders* para que sua leitura possa ser realizada no *webpack.common.js*
 
-Segurança
--
-
-<h3><i>Login</i></h3>
-
-Ao realizar o login (*"login-component.ts"*), as informações serão validadas (*"authentication.service.ts"*) de acordo com a variável de ambiente: `url_sso_token`, após o recebimento bem sucedido do token, ele é armazenado no *"local-storage-service.ts"*. Com o recebimento e armazenamento do token, as informações do usuário são recuperadas de acordo com a variável de ambiente: `url_sso_userinfo`, utilizando o token para isso.
-
-<h3><i> Interceptor</i></h3>
-
-A cada requisição à *API*, o *token* é verificado por ela, enviado pelo *"auth-interceptor.ts"*, se houver algum problema e não tiver sido mapeado, lá que o erro deve ser recuperado.
-Os problemas no token foram mapeados como 401 pela *API*, é interceptado pelo *"auth-interceptor.ts"* e efetua o processo de *"logoff"*, removendo o *token* e as informações do usuário do *"local-storage.service.ts"* via *"authentication.service.ts"*.
-O *"auth-interceptor.ts"* contém uma variável booleana estática, `static tokenExpired:boolean`, que serve para controlar as mensagens de erro do *APP*, evitar que se sobreponham. Caso seu valor seja verdadeiro, `true`, significa que houve algum erro específico mapeado pelo *interceptor* e que as mensagens de erro padrão das outras classes não devem ser utilizadas, caso seja falso, `false`, as mensagens de erro padrão deverão ser utilizadas.
-
 Execução
 -
 
