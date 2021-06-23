@@ -213,7 +213,7 @@ Há várias formas de *"rodar"* o projeto, aqui será abordado sua execução no
 
 <h3><i>JBoss</i></h3>
 
-Gerar a build, processo mostrado no inicio do documento, abra o cmd e enderesse ele para dentro da pasta da build, pasta *"dist"*, execute o comando `jar -cvf sicar-app.war` (caso não identifique o comando, verifique se o jdk ou jre do estão como variáveis de ambiente ou execute o comando `C:\Program Files\Java\jdk1.8.0_251\bin\jar.exe -cvf sicar-app.war` ), coloque o arquivo gerado dentro da pasta `%JBOSS_HOME%\standalone\deployments\` e pode executá-lo (para executá-lo é só ir em `%JBOSS_HOME%\bin\` e executar o arquivo *"standalone.bat"*). Agora ao acessar o ip do servidor JBoss, adicionando no final `/sicar-app`, será possível acessar a o projeto.
+Gerar a build, processo mostrado no inicio do documento, abra o cmd e enderesse ele para dentro da pasta da build, pasta *"dist"*, execute o comando `jar -cvf sicar-app.war *` (caso não identifique o comando, verifique se o jdk ou jre do estão como variáveis de ambiente ou execute o comando `C:\Program Files\Java\jdk1.8.0_251\bin\jar.exe -cvf sicar-app.war *` ), coloque o arquivo gerado dentro da pasta `%JBOSS_HOME%\standalone\deployments\` e pode executá-lo (para executá-lo é só ir em `%JBOSS_HOME%\bin\` e executar o arquivo *"standalone.bat"*). Agora ao acessar o ip do servidor JBoss, adicionando no final `/sicar-app`, será possível acessar a o projeto.
 
 <h3><i>Apache Tomcat</i></h3>
 
