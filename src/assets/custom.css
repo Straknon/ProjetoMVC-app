@@ -1,0 +1,137 @@
+body{
+    min-width: 600px;
+}
+
+main{
+    display: block !important;
+}
+
+.container{
+    margin-top: -132px;
+    padding-top: 132px;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    margin-bottom: -50px;
+}
+
+.project-item {
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.project-item-alert {
+    margin-bottom: 5px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+.project-item-alert-inline {
+    text-align: center !important;    
+    margin-bottom: 0px !important;
+    padding-left: 15px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    display: inline-block !important;
+}
+.project-item-inline {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    margin-bottom: 0px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.project-item-inline a {
+    padding-bottom: 5px;
+}
+main section .alert-success strong {
+    display: initial !important;
+}
+.formRegister{
+    background:white !important;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: #54bbab;
+    padding: 20px;
+}
+.tabRegister a{
+    border-style: solid !important;
+    border-width: 1px 1px 0 1px !important;
+    border-color: #54bbab !important;
+    margin-left: 0 !important;
+    color: #54bbab !important;
+    font-weight: bold;
+}
+.tabRegister.active a,
+.tabRegister a:hover{
+    background: white !important;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: #b3c7cb;
+}
+a:hover{
+    text-decoration: none;   
+}
+.table-click tbody tr:hover {
+    background-color: #EFF5F6 !important;
+    cursor: pointer;
+}
+.btn-center{
+    float: initial !important;
+}
+.center{
+    text-align: center !important;
+}
+
+/*--------------------RESPONSIVIDADE--------------------*/
+@media (max-width: 1000px){
+    .nav_title_detail{
+        display: none;
+    }
+    main section{
+        width: 100% !important;
+    }
+    .content{
+        width: 100% !important;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+/*--------------------SWEET ALERT--------------------*/
+.swal-custom{
+    font-size: 16px !important;
+}
+
+/*--------------------TABLE SCROLL--------------------*/
+.table-scroll tbody{
+    display: block;
+}
+
+.table-scroll tbody{
+    overflow-y: auto;
+}
+
+.table-scroll td{
+    line-height: 0.9 !important;
+    width: 100%;
+}
+
+/*--------------------GRUPOS AD--------------------*/
+.groupRow{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.groupRow i{
+    margin-right: 15px; 
+    color: #f9b000;
+}

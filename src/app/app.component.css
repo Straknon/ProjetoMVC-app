@@ -1,0 +1,24 @@
+/* Structure */
+table {
+    width: 100%;
+    text-align: center !important;
+}
+
+.mat-header-cell{
+  text-align: center !important;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 15%;
+}
+
+.header-align-right{  
+  padding: 21px 0;
+  justify-content: flex-end;
+}
+
+.spinner {
+  justify-content: center; 
+  align-items: center;
+}
